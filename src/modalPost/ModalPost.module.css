@@ -1,0 +1,152 @@
+.modalPostWrapper {
+  background-color: rgba(0, 0, 0, 0.581);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  width: 40px;
+  left: 95%;
+  top: 5%;
+}
+
+.modalPostContainer {
+  max-width: 80vw;
+  height: 90vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: auto;
+  grid-gap: 20px;
+}
+
+.containerImage {
+  position: relative;
+  max-width: 100%;
+}
+
+.image {
+  object-fit: cover;
+  overlay: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.skeletonImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.postInformation {
+  max-width: 100%;
+}
+
+.postInformationHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding: 10px;
+}
+
+.userInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.bodyContainer {
+  padding: 10px;
+}
+
+.postBody {
+  margin-left: 10px;
+}
+
+.commentsWrapper {
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.reactionsContainer {
+  height: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reactionsIcons {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.reactionsIcons img {
+  height: 100%;
+}
+.isLiked svg {
+  fill: red;
+}
+.isLiked path {
+  fill: red;
+}
+.notLike svg,
+.notLike path {
+  fill: black;
+}
+.saveIcon {
+  height: 100%;
+}
+
+.likesCount {
+  padding: 10px;
+}
+
+.addAnswerContainer {
+  padding: 10px;
+  /* border-top: 1px solid rgb(219, 219, 219); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputAnswer,
+.inputAnswer:focus {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 1500px) {
+  .modalPostContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerImage {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 494px) {
+  .containerImage {
+    max-width: 100%;
+    max-height: 400px;
+  }
+}

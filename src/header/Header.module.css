@@ -1,0 +1,50 @@
+.navWrapper {
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navContainer {
+    width: 935px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLogo {
+    width: 103px;
+    height: 29px;
+    margin-left: 10px;
+}
+
+.menuContainer {
+    width: 266px;
+    max-height: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatar {
+    object-fit: cover;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
+
+@media (max-width: 628px) {
+    .navContainer {
+        width: 100%;
+    }
+
+    .menuContainer {
+        max-width: 266px;
+    }
+}
+
+@media (max-width: 437px) {
+    .menuContainer {
+        
+        justify-content: right;
+    }
+}

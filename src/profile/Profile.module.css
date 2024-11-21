@@ -1,0 +1,51 @@
+.statesContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.states {
+    font-size: 3em;
+}
+
+.profileContainer {
+    max-width: 935px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileInfoContainer {
+    height: 267px;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.avatarContainer {
+    max-width: 322px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.avatar {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+@media (max-width: 454px) {
+
+    .avatarContainer {
+        max-width: 184px;
+    }
+
+    .avatar {
+        max-width: 80%;
+    }
+
+    .profileInfoContainer {
+        max-height: 200px;
+    }
+}

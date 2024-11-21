@@ -1,0 +1,13 @@
+.postBodyContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.postBodyUsername {
+    margin-bottom: auto
+}
+
+.postBody  {
+    margin-top: auto;
+}

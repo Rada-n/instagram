@@ -1,0 +1,27 @@
+.reactionsContainer {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reactionsIcons {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+.reactionsIcons img {
+    height: 50%;
+}
+.isLiked svg{
+    fill: red;
+}
+.isLiked path{
+    fill: red;
+}
+.notLike svg, .notLike path{
+    fill: black;
+}
+.saveIcon {
+    height: 50%;
+}

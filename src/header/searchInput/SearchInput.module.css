@@ -1,0 +1,31 @@
+.searchContainer {
+    position: relative;
+    border-radius: 3px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 12px;
+    left: 75px;
+}
+.searchIcon.hide {
+    display: none;
+}
+
+.searchInput {
+    text-align: center;
+    border: 1px solid rgba(219, 219, 219, 1);
+    width: 215px;
+    height: 28px;
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: rgba(142, 142, 142, 1);
+}
+
+@media (max-width: 626px) {
+    .searchContainer {
+        display: none;
+    }
+}

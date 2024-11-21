@@ -1,0 +1,32 @@
+.statesContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.states {
+    font-size: 3em;
+}
+
+.mainContainer {
+    max-width: 935px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.centralContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (max-width: 971px) {
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+    }
+}

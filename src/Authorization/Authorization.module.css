@@ -1,0 +1,102 @@
+.authorizationMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.authorizationsWrapper {
+  border: 1px solid rgb(182, 182, 182);
+  padding: 20px 10px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.authorizationsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.facebookButton {
+  background: rgba(0, 149, 246, 1);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.facebookIcon {
+  height: 20px;
+}
+
+.lineTextContainer {
+  position: relative;
+  width: 100%;
+}
+.lineTextContainer hr {
+  color: rgb(156, 156, 156);
+  width: 100%;
+}
+.orWithLine {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputEmail,
+.inputPassword {
+  background-color: rgb(247, 247, 247);
+  border-color: grey;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.forgotPassword {
+  color: rgba(0, 149, 246, 1);
+  cursor: pointer;
+}
+
+.loginButton {
+  background: rgba(0, 149, 246, 1);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.register {
+  color: rgba(0, 149, 246, 1);
+  cursor: pointer;
+}
+
+.spanRegister {
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .authorizationsWrapper {
+    max-width: 90vw;
+  }
+}

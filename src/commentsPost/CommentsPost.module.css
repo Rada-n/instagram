@@ -1,0 +1,25 @@
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.commentUserInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.commentContainer {
+  padding: 10px;
+}
+
+.commentContainer strong {
+    margin-right: 10px;
+  }
+
+  
+  .answerToComment {
+    cursor: pointer;
+  }
